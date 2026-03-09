@@ -9,7 +9,7 @@ let time = 0;
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  cnv.id('xenolux-canvas');
+  cnv.id('chromaweave-canvas');
   colorMode(HSB, 360, 100, 100, 1);
   
   mic = new p5.AudioIn();
@@ -92,7 +92,7 @@ function initAudio() {
 }
 
 function saveArt() {
-  saveCanvas('Xenolux_Weave_' + Date.now(), 'png');
+  saveCanvas('Chroma_Weave_' + Date.now(), 'png');
 }
 
 function drawDiagnostic() {
