@@ -46,7 +46,7 @@ function draw() {
     let freqIndex = floor(map(i, 0, numStrings, 0, spectrum.length / 2));
     let amp = spectrum[freqIndex] * gain;
     
-    // Calculate color based on frequency (Seeing Sound)
+    // Calculate coloUr based on frequency (Seeing Sound)
     let hue = map(freqIndex, 0, spectrum.length / 2, 0, 360);
     
     noFill();
@@ -88,11 +88,11 @@ function initAudio() {
   mic.start();
   fft.setInput(mic);
   isStarted = true;
-  document.getElementById('status').innerText = "WEAVE ACTIVE // SYNTHESIA MODE";
+  document.getElementById('status').innerText = "STRINGS ACTIVE // SYNTHESIA MODE";
 }
 
 function saveArt() {
-  saveCanvas('Chroma_Weave_' + Date.now(), 'png');
+  saveCanvas('Chroma_Strings_' + Date.now(), 'png');
 }
 
 function drawDiagnostic() {
